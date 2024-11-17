@@ -2,6 +2,11 @@
     box-sizing: border-box;
     font-family: Poppins;
 }
+body{
+    background-image: url("./Img/Frame\ 42.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}   
 .nav{
     width: 100%;
     height: 100px;
@@ -89,8 +94,8 @@
 
 
 
-.content .left{
-    height: 90%;
+.content .sidebar{
+    height: 760px;
     font-weight: 700;
     font-size: 20px;
     line-height: 33px;
@@ -102,25 +107,25 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.content .left .menu{
+.content .sidebar .menu{
     height: 390px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.content .left .menu div{
+.content .sidebar .menu div{
     gap: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.content .left .menu .dashboard{
+.content .sidebar .menu .dashboard{
     height: 70px;
     background-color: #A717FE;
     border-radius: 10px;
     padding: 5%;
 }
-.content .left .logout{
+.content .sidebar .logout{
     gap: 20px;
     display: flex;
     flex-direction: row;
@@ -186,6 +191,8 @@
     align-items: center;
     text-align: center;
 }
+
+
 .content .right .row3{
     width: 100%;
     height: auto;
@@ -195,7 +202,6 @@
     justify-content: space-between;
 }
 .content .right .row3 .left{
-    background-color: #fff;
     width: 70%;
     height: 100%;
     padding: 6%;
@@ -203,6 +209,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
+    font-weight: 700;
 }
 .content .right .row3 .left .options{
     width: 100%;
@@ -223,7 +231,6 @@
     align-items: center;
     font-size: 36px;
     line-height: 54px;
-    font-weight: 700;
     text-align: center;
 }
 .content .right .row3 .left .status{
@@ -236,6 +243,10 @@
     align-items: center;
     text-align: center;
 }
+
+
+
+
 .content .right .row3 .right{
     width: 30%;
     height: 100%;
@@ -280,32 +291,32 @@
     .nav .navbutton{
         display: none;
     }
-    .content .left{
+    .content .sidebar{
         align-items: center;
     }
-    .content .left .menu .dashboard{
+    .content .sidebar .menu .dashboard{
         height: 32px;
         width: 32px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .content .left .menu .dashboard .icon{
+    .content .sidebar .menu .dashboard .icon{
         display: none;
     }
-    .content .left .menu .transaction .icon{
+    .content .sidebar .menu .transaction .icon{
         display: none;
     }
-    .content .left .menu .transaction .icon{
+    .content .sidebar .menu .transaction .icon{
         display: none;
     }
-    .content .left .menu .support .icon{
+    .content .sidebar .menu .support .icon{
         display: none;
     }
-    .content .left .menu .settings .icon{
+    .content .sidebar .menu .settings .icon{
         display: none;
     }
-    .content .left .logout .icon{
+    .content .sidebar .logout .icon{
         display: none;
     }
     .content .right{
@@ -322,7 +333,7 @@
     .content{
         flex-direction: column;
     }
-    .content .left{
+    .content .sidebar{
         display: none;
     }
     .content .right{
@@ -349,6 +360,9 @@
         font-size: 15px;
         line-height: 18px;
     }
+    .content .right .row2{
+        justify-content: space-between;
+    }
     .content .right .row3{
         aspect-ratio: 706/600;
         flex-direction: column;
@@ -359,5 +373,7 @@
     }
     .content .right .row3 .right{
         width: 100%;
+        display: flex;
+        align-items: center;
     }
 }
