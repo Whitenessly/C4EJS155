@@ -1,0 +1,263 @@
+body{
+    /* đổi màu body */
+    background-color: antiquewhite;
+}
+
+.container{
+    /* chỉnh chiều rộng box */
+    width: 100%;
+    /* chỉnh chiều cao box */
+    height: 800px;
+    /* đặt làm cha */
+    position: relative;
+}
+
+.top{
+    /* chỉnh chiều rộng box */
+    width: 100%;
+    /* chỉnh chiều cao box */
+    height: 500px;
+    /* chỉnh màu box */
+    background: #fff;
+    /* đặt làm cha */
+    position: relative;
+}
+
+.bot{
+    /* chỉnh chiều rộng box */
+    width: 100%;
+    /* chỉnh chiều cao box */
+    height: 300px;
+    /* chỉnh màu box */
+    background: #363032;
+    /* đặt làm cha của middle */
+    position: relative;
+}
+
+.middle{
+    /* màu nền middle */
+    background: #ECDAC4;
+    /* độ rộng middle */
+    width: 50%;
+    /* độ cao middle */
+    height: 60px;
+    /* chỉnh viền middle */
+    border-radius: 90px;
+    /* đặt làm con bot */
+    position: absolute;
+    /* cách cạnh trái */
+    left: 50%;
+    /* đổi tâm về chính giữa */
+    transform: translate( -50%, -50%);
+}
+
+.anh1{
+    /* độ rộng box */
+    width: 250px;
+    /* chiều cao box */
+    height: 250px;
+    /* chỉnh dãn ảnh */
+    object-fit: cover;
+    /* viền tròn */
+    border-radius: 50%;
+    /* đặt làm con */
+    position: absolute;
+    /* cách cạnh trên */
+    top: 30px;
+    /* cách cạnh phải */
+    right: 50px;
+    /* ẩn phần thừa */
+    overflow: hidden;
+}
+
+.anh2{
+    /* độ rộng box */
+    width: 180px;
+    /* chiều cao box */
+    height: 180px;
+    /* chỉnh dãn ảnh */
+    object-fit: cover;
+    /* viền tròn */
+    border-radius: 50%;
+    /* đặt làm con */
+    position: absolute;
+    /* cách cạnh trên */
+    top: 190px;
+    /* cách cạnh phải */
+    right: 70px;
+    /* ẩn phần thừa */
+    overflow: hidden;
+}
+
+img{
+    /* độ rộng ảnh */
+    width: 100%;
+    /* chiều cao ảnh */
+    height: 100%;
+}
+
+.modal_container{
+    /* độ rộng box */
+    width: 100%;
+    /* chiều cao box */
+    height: 800px;
+    /* đặt làm con */
+    position: absolute;
+    /* đổi tâm */
+    transform: translate(-50%,-50%);
+    /* cách cạnh trên */
+    top: 50%;
+    /* cách cạnh trái */
+    left: 50%;
+    /* đổi màu nền */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal{
+    /* độ rộng box */
+    width: 500px;
+    /* chiều cao box */
+    height: 500px;
+    /* đặt làm con */
+    position: absolute;
+    /* đổi tâm */
+    transform: translate(-50%,-50%);
+    /* đổi màu nền */
+    background-color: #fff;
+    /* cách trên */
+    top: 50%;
+    /* cách trái */
+    left: 50%;
+    /* bóng của box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* chỉnh viền nền */
+    border-radius: 10px;
+    /* đặt làm cha */
+    position: relative;
+}
+
+.modalin1{
+    /* đặt làm con */
+    position: absolute;
+    /* đổi tâm */
+    transform: translate(-50%,-50%);
+    /* độ rộng box */
+    width: 80%;
+    /* cách trái */
+    left: 50%;
+    /* chiều cao box */
+    height: 34%;
+    /* cách trên */
+    top: 26%;
+    /* đổi màu nên */
+    background-color: #E5E5E5;
+    /* chỉnh viền */
+    border-radius: 10px;
+}
+
+.modalin2{
+    /* đặt làm con */
+    position: absolute;
+    /* đổi tâm */
+    transform: translate(-50%,-50%);
+    /* chiều rộng box */
+    width: 80%;
+    /* cách trái */
+    left: 50%;
+    /* cách phải */
+    top: 55%;
+    /* chiều cao box */
+    height: 20%;
+}
+
+p{
+    /* chỉnh vị trí chữ */
+    text-align: center;
+    /* đổi phông chữ */
+    font-family: sans-serif;
+    /* đổi cỡ chữ */
+    font-size: 20px;
+}
+
+.yy1{
+    /* chỉnh cỡ chữ */
+    font-size: 15px;
+    /* đổi tâm */
+    transform: translate(-50%,-50%);
+    /* đổi màu viền */
+    border-color: #D1D1D1;
+    /* chỉnh viền */
+    border-radius: 10px;
+    /* cách trái */
+    left: 50%;
+    /* cách trên */
+    top: 70%;
+    /* khoảng cách chữ vs viền */
+    padding: 12px;
+    /* đặt làm con */
+    position: absolute;
+    /* độ rộng box */
+    width: 75%;
+}
+
+
+.yy2{
+    /* đổi màu nền */
+    background-color: #4F4F4F;
+    /* đôỉ màu viền */
+    border-color: #4F4F4F;
+    /* chỉnh viền */
+    border-radius: 10px;
+    /* màu chữ */
+    color:#fff;
+    /* cỡ chữ */
+    font-size: 20px;
+    /* đặt làm con */
+    position: absolute;
+    /* đổi tâm */
+    transform: translate(-50%,-50%);
+    /* khoảng cách chữ vs viền */
+    padding: 12px;
+    /* cách trái */
+    left: 50%;
+    /* cách trên */
+    top: 85%;
+    /* độ rộng box */
+    width: 80%
+}
+
+.modalin3{
+    /* độ rộng box */
+    width: 30px;
+    /* chiều cao box */
+    height: 30px;
+    /* viền tròn */
+    border-radius: 50%;
+    /* đặt làm con */
+    position: absolute;
+    /* cách trên */
+    top: 3%;
+    /* cách phải */
+    right: 3%;
+    /* đổi màu nền */
+    background-color: #E5E5E5;
+    /* ẩn phần thừa */
+    overflow: hidden;
+    /* đặt làm cha */
+    position: relative (anh3);
+}
+
+.anh3{
+    /* độ rộng ảnh */
+    width: 50%;
+    /* chiều cao ảnh */
+    height: 50%;
+    /* đổi tâm */
+    transform: translate(-50%,-50%);
+    /* đặt làm con */
+    position: absolute;
+    /* cách trên */
+    top: 50%;
+    /* cách trái */
+    left: 50%;
+}

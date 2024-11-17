@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:antiquewhite;
+}
+
+.nav{
+    width: 100%;
+    height: 113px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .button{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .logo{
+    width: 140px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo p{
+    font-size: 24px;
+    line-height: 40px;
+    font-family: Roboto;
+}
+.nav .bar{
+    width: 428px;
+    height: 17px;
+    font-size: 14px;
+    font-family: Roboto;
+    line-height: 16.8px;
+    color: #19182580;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.nav .acc{
+    width: 220px;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+.nav .acc .log{
+    width: 105px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .acc .sign{
+    width: 115px;
+    height: 49px;
+    background-color: #5D50C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+}
+
+
+.content1{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1184/750;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content1 .left{
+    width: 35%;
+    height: auto;
+    aspect-ratio: 412/577;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Roboto;
+}
+.content1 .left .click1{
+    width: 224px;
+    height: 56px;
+    background-color: #ffffff;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.content1 .left .click1 p{
+    font-weight: bold;
+    color: #F85E9F;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+.content1 .left .click1 .img{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content1 .left .click1 .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.content1 .left .text1{
+    width: 100%;
+    height: 43%;
+    font-size: 69px;
+    line-height: 82.8px;
+    font-weight: bold;
+}
+
+.content1 .left .text2{
+    width: 100%;
+    height: 15%;
+    font-size: 18px;
+    line-height: 28.8px;
+}
+
+.content1 .left .click2{
+    width: 338px;
+    height: 56px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16.8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content1 .left .click2 .click21{
+    width: 141px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    background-color: #5D50C6;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.content1 .left .click2 .click22{
+    width: 181px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    gap: 5%;
+}
+.content1 .left .click2 .click22 .class221{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content1 .left .click2 .click22 .class221 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.content1 .right{
+    width: 65%;
+    height: auto;
+    aspect-ratio: 772/713;
+    position: relative;
+}
+.content1 .right img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 772/287;
+}
+.content1 .right .photo{
+    width: 75%;
+    height: auto;
+    aspect-ratio: 575/632;
+    position: absolute;
+    transform: translate(-50%,0);
+    left:50%;
+    bottom: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 6%;
+    align-content: space-between;
+}
+.content1 .right .photo img{
+    width: 47%;
+    height: 47%;
+    border-radius: 10px;
+}
+
+
+
+@media (min-width: 1024px) {
+    .nav .button{
+        display: none;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .nav .bar{
+        display: none;
+    }
+
+    .content1{
+        flex-direction: column-reverse;
+        aspect-ratio: 895/1200;
+        gap:5%;
+    }
+    .content1 .right{
+        width: 86%;
+        padding: 5%;
+    }
+
+    .content1 .left{
+        width: 100%;
+        align-items: center;
+        aspect-ratio: 895/500;
+    }
+    .content1 .left .text1{
+        text-align: center;
+        font-size: 56px;
+        line-height: 67.2px;
+        height: 31%;
+    }
+    .content1 .left .text2{
+        text-align: center;
+        height: 14%;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .nav .bar{
+        display: none;
+    }
+    .nav .acc{
+        display: none;
+    }
+    .nav{
+        flex-direction: row-reverse;
+    }
+
+    .content1{
+        flex-direction: column-reverse;
+        aspect-ratio: 398/750;
+        gap:5%;
+    }
+    .content1 .right{
+        width: 86%;
+        padding: 5%;
+    }
+    .content1 .left{
+        width: 100%;
+    }
+
+    .content1 .left{
+        width: 100%;
+        align-items: center;
+        aspect-ratio: 398/485;
+    }
+    .content1 .left .text1{
+        text-align: center;
+        font-size: 40px;
+        line-height: 48px;
+        height: 18%;
+    }
+    .content1 .left .text2{
+        text-align: center;
+        font-size: 16px;
+        line-height: 25.6px;
+        height: 11%;
+    }
+    .content1 .left .click2{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 398/120;
+    }
+    .content1 .left .click2 .click21{
+        width: 100%;
+        height: 40%;
+    }
+    .content1 .left .click2 .click22{
+        width: 100%;
+        height: 40%;
+    }
+}
+

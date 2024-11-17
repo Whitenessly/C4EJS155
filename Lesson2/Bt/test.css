@@ -1,0 +1,15 @@
+.text{
+    color:red;
+    text-indent: 10px;
+    
+}
+
+.box{
+    background-color: cadetblue;
+    width: 200px;
+    height: 100px;
+}
+
+.list{
+    list-style:circle;
+}

@@ -1,0 +1,42 @@
+.container{
+    /* đổi màu nền */
+    background: rgb(34,195,194);
+    background: linear-gradient(30deg, rgba(34,195,194,1) 3%, rgba(191,68,163,1) 100%);
+    /* chiều rộng ô nền */
+    width: 500px;
+    /* kích cơ viền ô nền */
+    padding: 20px;
+    /* chỉnh vị trí ô nền */
+    margin: auto;
+    /* chỉnh bóng ô nền */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header_info{
+    /* chỉnh vị trí ảnh là tên, nghề ra giữa */
+    text-align: center;
+}
+
+.avatar{
+    /* chỉnh chiều ngang của ảnh */
+    width: 300px;
+    /* chỉnh chiều dọc của ảnh */
+    height: 300px;
+    /* chỉnh ảnh không bị ép */
+    object-fit: cover;
+    /* chỉnh kích cỡ khung ảnh */
+    border-radius: 25%;
+}
+
+.name{
+    /* đổi phông chữ tên */
+    font-family: monospace;
+    /* chỉnh vị trí tên */
+    text-align: center;
+    /* trang trí chữ */
+    text-decoration:underline;
+    /* chỉnh cỡ chữ */
+    font-size: 20px;
+    /* chỉnh phông chữ */
+    font-style: italic;
+}
